@@ -45,5 +45,10 @@ namespace Necflis
         {
 
         }
+
+        private void tblPelicula_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

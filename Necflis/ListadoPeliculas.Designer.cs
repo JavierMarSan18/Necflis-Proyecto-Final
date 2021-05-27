@@ -65,6 +65,7 @@ namespace Necflis
             this.tblPelicula.Name = "tblPelicula";
             this.tblPelicula.Size = new System.Drawing.Size(423, 299);
             this.tblPelicula.TabIndex = 27;
+            this.tblPelicula.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblPelicula_CellContentClick);
             // 
             // ListadoPeliculas
             // 
@@ -77,6 +78,7 @@ namespace Necflis
             this.Controls.Add(this.lblClientes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ListadoPeliculas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "ListadoPeliculas";
             this.Load += new System.EventHandler(this.ListadoPeliculas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
