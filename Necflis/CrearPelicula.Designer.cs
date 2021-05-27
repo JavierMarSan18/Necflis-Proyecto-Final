@@ -37,7 +37,6 @@ namespace Necflis
             this.label1 = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.txtGeneroPelicula = new System.Windows.Forms.ComboBox();
-            this.txtSinopsisPelicula = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnLimpiar = new System.Windows.Forms.Button();
@@ -45,6 +44,7 @@ namespace Necflis
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtTipoPelicula = new System.Windows.Forms.ComboBox();
+            this.txtSinopsisPelicula = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -126,6 +126,7 @@ namespace Necflis
             "Comedia",
             "Terror",
             "Suspenso"});
+            this.txtGeneroPelicula.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txtGeneroPelicula.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGeneroPelicula.FormattingEnabled = true;
             this.txtGeneroPelicula.Items.AddRange(new object[] {
@@ -138,15 +139,6 @@ namespace Necflis
             this.txtGeneroPelicula.Size = new System.Drawing.Size(272, 30);
             this.txtGeneroPelicula.TabIndex = 29;
             this.txtGeneroPelicula.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
-            // 
-            // txtSinopsisPelicula
-            // 
-            this.txtSinopsisPelicula.FormattingEnabled = true;
-            this.txtSinopsisPelicula.Location = new System.Drawing.Point(88, 253);
-            this.txtSinopsisPelicula.Name = "txtSinopsisPelicula";
-            this.txtSinopsisPelicula.Size = new System.Drawing.Size(276, 147);
-            this.txtSinopsisPelicula.TabIndex = 30;
-            this.txtSinopsisPelicula.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -189,34 +181,36 @@ namespace Necflis
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(48)))), ((int)(((byte)(65)))));
-            this.panel3.Location = new System.Drawing.Point(84, 83);
+            this.panel3.Location = new System.Drawing.Point(84, 82);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(5, 29);
+            this.panel3.Size = new System.Drawing.Size(5, 30);
             this.panel3.TabIndex = 34;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(48)))), ((int)(((byte)(65)))));
-            this.panel1.Location = new System.Drawing.Point(84, 140);
+            this.panel1.Location = new System.Drawing.Point(84, 139);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(5, 29);
+            this.panel1.Size = new System.Drawing.Size(5, 30);
             this.panel1.TabIndex = 35;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(48)))), ((int)(((byte)(65)))));
-            this.panel2.Location = new System.Drawing.Point(88, 197);
+            this.panel2.Location = new System.Drawing.Point(84, 196);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(5, 29);
+            this.panel2.Size = new System.Drawing.Size(5, 30);
             this.panel2.TabIndex = 36;
             // 
             // txtTipoPelicula
             // 
+            this.txtTipoPelicula.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.txtTipoPelicula.AllowDrop = true;
+            this.txtTipoPelicula.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txtTipoPelicula.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTipoPelicula.FormattingEnabled = true;
             this.txtTipoPelicula.Items.AddRange(new object[] {
-            "Seria",
+            "Serie",
             "Película"});
             this.txtTipoPelicula.Location = new System.Drawing.Point(88, 139);
             this.txtTipoPelicula.Name = "txtTipoPelicula";
@@ -224,19 +218,28 @@ namespace Necflis
             this.txtTipoPelicula.TabIndex = 28;
             this.txtTipoPelicula.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
+            // txtSinopsisPelicula
+            // 
+            this.txtSinopsisPelicula.Font = new System.Drawing.Font("Arial", 14.25F);
+            this.txtSinopsisPelicula.Location = new System.Drawing.Point(88, 254);
+            this.txtSinopsisPelicula.Name = "txtSinopsisPelicula";
+            this.txtSinopsisPelicula.Size = new System.Drawing.Size(272, 151);
+            this.txtSinopsisPelicula.TabIndex = 37;
+            this.txtSinopsisPelicula.Text = "";
+            // 
             // CrearPelicula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(7)))), ((int)(((byte)(32)))));
             this.ClientSize = new System.Drawing.Size(447, 481);
+            this.Controls.Add(this.txtSinopsisPelicula);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtSinopsisPelicula);
             this.Controls.Add(this.txtGeneroPelicula);
             this.Controls.Add(this.txtTipoPelicula);
             this.Controls.Add(this.txtNombrePelicula);
@@ -264,7 +267,6 @@ namespace Necflis
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.ComboBox txtGeneroPelicula;
-        private System.Windows.Forms.ListBox txtSinopsisPelicula;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnLimpiar;
@@ -272,5 +274,6 @@ namespace Necflis
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ComboBox txtTipoPelicula;
+        private System.Windows.Forms.RichTextBox txtSinopsisPelicula;
     }
 }

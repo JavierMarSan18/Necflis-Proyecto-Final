@@ -50,6 +50,7 @@ namespace Necflis
             this.pnlOpCliente.Name = "pnlOpCliente";
             this.pnlOpCliente.Size = new System.Drawing.Size(225, 481);
             this.pnlOpCliente.TabIndex = 0;
+            this.pnlOpCliente.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlOpCliente_Paint);
             // 
             // lblClientes
             // 
@@ -80,6 +81,7 @@ namespace Necflis
             this.button1.Text = "Seleccionar cliente ";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnNuevoCliente
             // 

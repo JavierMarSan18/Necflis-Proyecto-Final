@@ -50,10 +50,11 @@ namespace Necflis
             // 
             // tblCliente
             // 
+            this.tblCliente.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tblCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tblCliente.Location = new System.Drawing.Point(13, 93);
             this.tblCliente.Name = "tblCliente";
-            this.tblCliente.Size = new System.Drawing.Size(423, 364);
+            this.tblCliente.Size = new System.Drawing.Size(423, 299);
             this.tblCliente.TabIndex = 12;
             this.tblCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblCliente_CellContentClick);
             // 

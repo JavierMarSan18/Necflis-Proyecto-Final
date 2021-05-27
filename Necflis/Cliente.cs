@@ -44,5 +44,15 @@ namespace Necflis
         {
             AbrirForm(new CrearCliente());
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new SeleccionarCliente());
+        }
+
+        private void pnlOpCliente_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

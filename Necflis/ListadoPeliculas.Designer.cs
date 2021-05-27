@@ -31,10 +31,10 @@ namespace Necflis
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListadoPeliculas));
             this.lblClientes = new System.Windows.Forms.Label();
-            this.tblPelicula = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.tblPelicula)).BeginInit();
+            this.tblPelicula = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblPelicula)).BeginInit();
             this.SuspendLayout();
             // 
             // lblClientes
@@ -48,14 +48,6 @@ namespace Necflis
             this.lblClientes.TabIndex = 12;
             this.lblClientes.Text = "Lista de Películas";
             // 
-            // tblPelicula
-            // 
-            this.tblPelicula.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tblPelicula.Location = new System.Drawing.Point(13, 93);
-            this.tblPelicula.Name = "tblPelicula";
-            this.tblPelicula.Size = new System.Drawing.Size(423, 364);
-            this.tblPelicula.TabIndex = 13;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -66,21 +58,29 @@ namespace Necflis
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
             // 
+            // tblPelicula
+            // 
+            this.tblPelicula.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tblPelicula.Location = new System.Drawing.Point(13, 93);
+            this.tblPelicula.Name = "tblPelicula";
+            this.tblPelicula.Size = new System.Drawing.Size(423, 299);
+            this.tblPelicula.TabIndex = 27;
+            // 
             // ListadoPeliculas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(7)))), ((int)(((byte)(32)))));
             this.ClientSize = new System.Drawing.Size(447, 481);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tblPelicula);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblClientes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ListadoPeliculas";
             this.Text = "ListadoPeliculas";
             this.Load += new System.EventHandler(this.ListadoPeliculas_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.tblPelicula)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblPelicula)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -89,7 +89,7 @@ namespace Necflis
         #endregion
 
         private System.Windows.Forms.Label lblClientes;
-        private System.Windows.Forms.DataGridView tblPelicula;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridView tblPelicula;
     }
 }

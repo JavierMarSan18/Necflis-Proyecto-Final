@@ -110,5 +110,10 @@ namespace Necflis
         {
             AbrirForm(new FormPelicula());
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -41,3 +41,6 @@ C:\Users\alumno\Desktop\Proyecto Programación\Necflis\Necflis\Necflis\bin\Debug
 C:\Users\alumno\Desktop\Proyecto Programación\Necflis\Necflis\Necflis\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\alumno\Desktop\Proyecto Programación\Necflis\Necflis\Necflis\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\alumno\Desktop\Proyecto Programación\Necflis\Necflis\Necflis\obj\Debug\Necflis.csproj.CopyComplete
+C:\Users\alumno\Desktop\Proyecto Programación\Necflis\Necflis\Necflis\obj\Debug\Necflis.SeleccionarCliente.resources
+C:\Users\alumno\Desktop\Proyecto Programación\Necflis\Necflis\Necflis\obj\Debug\Necflis.PerfilCliente.resources
+C:\Users\alumno\Desktop\Proyecto Programación\Necflis\Necflis\Necflis\obj\Debug\Necflis.Playlist.resources
