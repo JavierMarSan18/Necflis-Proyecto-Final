@@ -13,6 +13,8 @@ namespace Necflis
 {
     public partial class CrearPelicula : Form
     {
+        String conString = "datasource=localhost;port=3306;username=root;";
+
         public CrearPelicula()
         {
             InitializeComponent();
@@ -24,7 +26,6 @@ namespace Necflis
             txtSinopsisPelicula.Text = String.Empty;
         }
 
-        String conString = "datasource=localhost;port=3306;username=root;";
         private void guardarPelicula()
         {
             string nombre = txtNombrePelicula.Text;
@@ -35,22 +36,9 @@ namespace Necflis
             string insert = "insert into necflis.pelicula(Nombre, Tipo, Genero, Sinopsis)" +
                 "VALUES ('" + nombre + "','" + tipo + "', '" + genero + "','" + sinopsis + "')";
 
-            try
-            {
-                MySqlConnection con = new MySqlConnection(conString);
-                MySqlCommand command = new MySqlCommand(insert, con);
-                con.Open();
-                command.ExecuteNonQuery();
-                limpiar();
-                con.Close();
-
-                MessageBox.Show("Guardado exitosamente");
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error al guardar \n{ex}");
-            }
+            DBConexion agregar = new DBConexion();
+            agregar.Insert(insert);
+            limpiar();
         }
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {

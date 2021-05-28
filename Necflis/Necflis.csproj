@@ -113,6 +113,7 @@
     <Compile Include="CrearPelicula.Designer.cs">
       <DependentUpon>CrearPelicula.cs</DependentUpon>
     </Compile>
+    <Compile Include="DBConexion.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -34,22 +34,9 @@ namespace Necflis
             string insert = "insert into necflis.cliente(Nombre, Direccion, Edad)" + 
                 "VALUES ('"+ nombre + "','" + direccion + "', " + edad + ")";
 
-            try
-            {
-                MySqlConnection con = new MySqlConnection(conString);
-                MySqlCommand command = new MySqlCommand(insert, con);
-                con.Open();
-                command.ExecuteNonQuery();
-                limpiar();
-                con.Close();
-
-                MessageBox.Show("Guardado exitosamente");
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error al guardar \n{ex}");
-            }
+            DBConexion agregar = new DBConexion();
+            agregar.Insert(insert);
+            limpiar();
         }
 
         private void button2_Click(object sender, EventArgs e)
