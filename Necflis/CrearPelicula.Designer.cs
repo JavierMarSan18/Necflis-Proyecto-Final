@@ -211,7 +211,8 @@ namespace Necflis
             this.txtTipoPelicula.FormattingEnabled = true;
             this.txtTipoPelicula.Items.AddRange(new object[] {
             "Serie",
-            "Película"});
+            "Película",
+            " "});
             this.txtTipoPelicula.Location = new System.Drawing.Point(88, 139);
             this.txtTipoPelicula.Name = "txtTipoPelicula";
             this.txtTipoPelicula.Size = new System.Drawing.Size(272, 30);

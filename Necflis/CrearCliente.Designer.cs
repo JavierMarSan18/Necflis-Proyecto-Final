@@ -143,8 +143,11 @@ namespace Necflis
             // 
             // txtEdadCliente
             // 
+            this.txtEdadCliente.AllowDrop = true;
+            this.txtEdadCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txtEdadCliente.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEdadCliente.FormattingEnabled = true;
+            this.txtEdadCliente.IntegralHeight = false;
             this.txtEdadCliente.Items.AddRange(new object[] {
             "12",
             "13",
@@ -194,11 +197,13 @@ namespace Necflis
             "57",
             "58",
             "59",
-            "60"});
+            "60",
+            " "});
             this.txtEdadCliente.Location = new System.Drawing.Point(85, 303);
             this.txtEdadCliente.Name = "txtEdadCliente";
             this.txtEdadCliente.Size = new System.Drawing.Size(272, 30);
             this.txtEdadCliente.TabIndex = 21;
+            this.txtEdadCliente.SelectedIndexChanged += new System.EventHandler(this.txtEdadCliente_SelectedIndexChanged);
             // 
             // panel2
             // 

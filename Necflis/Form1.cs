@@ -19,8 +19,6 @@ namespace Necflis
             InitializeComponent();
         }
 
-        String conString = "datasource=localhost;port=3306;username=root;";
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -79,7 +77,11 @@ namespace Necflis
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            string message = "Javier Marroquín 0907-20-22352\n" +
+                             "Azucena López    0907-20-11489\n" +
+                             "Osman Cordero     0907-20-6641\n" +
+                             "Billy Cardona    0907-20-15738";
+            MessageBox.Show(message);
         }
 
         private void AbrirForm(object Nform)

@@ -21,8 +21,6 @@ namespace Necflis
         private void limpiar()
         {
             txtNombrePelicula.Text = String.Empty;
-            txtTipoPelicula.Text = String.Empty;
-            txtGeneroPelicula.Text = String.Empty;
             txtSinopsisPelicula.Text = String.Empty;
         }
 

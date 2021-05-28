@@ -22,7 +22,6 @@ namespace Necflis
         {
             txtNombreCliente.Text = String.Empty;
             txtDireccionCliente.Text = String.Empty;
-            txtEdadCliente.Text = String.Empty;
         }
 
         String conString = "datasource=localhost;port=3306;username=root;";
@@ -74,6 +73,11 @@ namespace Necflis
         }
 
         private void txtNombreCliente_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtEdadCliente_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
