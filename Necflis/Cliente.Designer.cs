@@ -1,7 +1,7 @@
 ﻿
 namespace Necflis
 {
-    partial class FormCliente
+    partial class formCliente
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Necflis
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCliente));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formCliente));
             this.pnlOpCliente = new System.Windows.Forms.Panel();
             this.lblClientes = new System.Windows.Forms.Label();
             this.btnSelecCliente = new System.Windows.Forms.Button();
@@ -128,12 +128,12 @@ namespace Necflis
             this.pnlCliente.Image = ((System.Drawing.Image)(resources.GetObject("pnlCliente.Image")));
             this.pnlCliente.Location = new System.Drawing.Point(223, 1);
             this.pnlCliente.Name = "pnlCliente";
-            this.pnlCliente.Size = new System.Drawing.Size(447, 481);
+            this.pnlCliente.Size = new System.Drawing.Size(450, 481);
             this.pnlCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pnlCliente.TabIndex = 1;
             this.pnlCliente.TabStop = false;
             // 
-            // FormCliente
+            // formCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -142,7 +142,7 @@ namespace Necflis
             this.Controls.Add(this.pnlCliente);
             this.Controls.Add(this.pnlOpCliente);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormCliente";
+            this.Name = "formCliente";
             this.Text = "Cliente";
             this.pnlOpCliente.ResumeLayout(false);
             this.pnlOpCliente.PerformLayout();

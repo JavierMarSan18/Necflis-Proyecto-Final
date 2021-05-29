@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Necflis
 {
-    public partial class FormCliente : Form
+    public partial class formCliente : Form
     {
-        public FormCliente()
+        public formCliente()
         {
             InitializeComponent();
         }

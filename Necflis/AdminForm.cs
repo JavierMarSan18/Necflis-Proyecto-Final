@@ -11,7 +11,7 @@ namespace Necflis
     {
         private Form form;
 
-        //Abrir formulario de lista de peliculas
+        //Abrir formulario 
         public void AbrirForm(PictureBox pnlContenedor, object form)
         {
             if (pnlContenedor.Controls.Count > 0)

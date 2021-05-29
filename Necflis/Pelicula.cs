@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Necflis
 {
-    public partial class FormPelicula : Form
+    public partial class formPelicula : Form
     {
-        public FormPelicula()
+        public formPelicula()
         {
             InitializeComponent();
         }

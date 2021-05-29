@@ -1,7 +1,7 @@
 ﻿
 namespace Necflis
 {
-    partial class FormPelicula
+    partial class formPelicula
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Necflis
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPelicula));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formPelicula));
             this.pnlOpCliente = new System.Windows.Forms.Panel();
             this.lblClientes = new System.Windows.Forms.Label();
             this.btnNuevaPelicula = new System.Windows.Forms.Button();
@@ -111,7 +111,7 @@ namespace Necflis
             this.pnlPelicula.TabIndex = 2;
             this.pnlPelicula.TabStop = false;
             // 
-            // FormPelicula
+            // formPelicula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -121,7 +121,7 @@ namespace Necflis
             this.Controls.Add(this.pnlOpCliente);
             this.ForeColor = System.Drawing.Color.Coral;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormPelicula";
+            this.Name = "formPelicula";
             this.Text = "Pelicula";
             this.pnlOpCliente.ResumeLayout(false);
             this.pnlOpCliente.PerformLayout();

@@ -29,17 +29,7 @@ namespace Necflis
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnPelicula_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
         {
 
         }
@@ -85,20 +75,6 @@ namespace Necflis
             MessageBox.Show(message);
         }
 
-        private void AbrirForm(object Nform)
-        {
-            if (this.pnlContenedor.Controls.Count > 0)
-                this.pnlContenedor.Controls.RemoveAt(0);
-
-            Form form = Nform as Form;
-
-            form.TopLevel = false;
-            form.Dock = DockStyle.Fill;
-            this.pnlContenedor.Controls.Add(form);
-            this.pnlContenedor.Tag = form;
-            form.Show();
-        }
-
         private void pnlContenedor_Paint(object sender, PaintEventArgs e)
         {
 
@@ -106,12 +82,14 @@ namespace Necflis
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
-            AbrirForm(new FormCliente());
+            AdminForm form = new AdminForm();
+            form.AbrirForm(pnlContenedor, new formCliente());
         }
 
         private void btnPeliculas_Click(object sender, EventArgs e)
         {
-            AbrirForm(new FormPelicula());
+            AdminForm form = new AdminForm();
+            form.AbrirForm(pnlContenedor, new formPelicula());
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

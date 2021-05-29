@@ -47,6 +47,7 @@ namespace Necflis
             this.lblClientes.Size = new System.Drawing.Size(251, 39);
             this.lblClientes.TabIndex = 11;
             this.lblClientes.Text = "Lista de clientes";
+            this.lblClientes.Click += new System.EventHandler(this.lblClientes_Click);
             // 
             // tblCliente
             // 

@@ -10,8 +10,6 @@ C:\Users\alumno\Desktop\Proyecto Programación\Necflis\Necflis\Necflis\obj\Debug
 C:\Users\alumno\Desktop\Proyecto Programación\Necflis\Necflis\Necflis\obj\Debug\Necflis.Inicio.resources
 C:\Users\alumno\Desktop\Proyecto Programación\Necflis\Necflis\Necflis\obj\Debug\Necflis.ListadoClientes.resources
 C:\Users\alumno\Desktop\Proyecto Programación\Necflis\Necflis\Necflis\obj\Debug\Necflis.CrearCliente.resources
-C:\Users\alumno\Desktop\Proyecto Programación\Necflis\Necflis\Necflis\obj\Debug\Necflis.FormCliente.resources
-C:\Users\alumno\Desktop\Proyecto Programación\Necflis\Necflis\Necflis\obj\Debug\Necflis.FormPelicula.resources
 C:\Users\alumno\Desktop\Proyecto Programación\Necflis\Necflis\Necflis\obj\Debug\Necflis.ListadoPeliculas.resources
 C:\Users\alumno\Desktop\Proyecto Programación\Necflis\Necflis\Necflis\obj\Debug\Necflis.CrearPelicula.resources
 C:\Users\alumno\Desktop\Proyecto Programación\Necflis\Necflis\Necflis\bin\Debug\BouncyCastle.Crypto.dll
@@ -44,3 +42,5 @@ C:\Users\alumno\Desktop\Proyecto Programación\Necflis\Necflis\Necflis\obj\Debug
 C:\Users\alumno\Desktop\Proyecto Programación\Necflis\Necflis\Necflis\obj\Debug\Necflis.SeleccionarCliente.resources
 C:\Users\alumno\Desktop\Proyecto Programación\Necflis\Necflis\Necflis\obj\Debug\Necflis.PerfilCliente.resources
 C:\Users\alumno\Desktop\Proyecto Programación\Necflis\Necflis\Necflis\obj\Debug\Necflis.Playlist.resources
+C:\Users\alumno\Desktop\Proyecto Programación\Necflis\Necflis\Necflis\obj\Debug\Necflis.formCliente.resources
+C:\Users\alumno\Desktop\Proyecto Programación\Necflis\Necflis\Necflis\obj\Debug\Necflis.formPelicula.resources

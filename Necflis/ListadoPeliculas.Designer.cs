@@ -47,6 +47,7 @@ namespace Necflis
             this.lblClientes.Size = new System.Drawing.Size(269, 39);
             this.lblClientes.TabIndex = 12;
             this.lblClientes.Text = "Lista de Películas";
+            this.lblClientes.Click += new System.EventHandler(this.lblClientes_Click);
             // 
             // pictureBox1
             // 
