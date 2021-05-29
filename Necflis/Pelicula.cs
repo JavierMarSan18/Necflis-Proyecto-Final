@@ -17,28 +17,16 @@ namespace Necflis
             InitializeComponent();
         }
 
-        private void AbrirForm(object Nform)
-        {
-            if (this.pnlPelicula.Controls.Count > 0)
-                this.pnlPelicula.Controls.RemoveAt(0);
-
-            Form form = Nform as Form;
-
-            form.TopLevel = false;
-            form.Dock = DockStyle.Fill;
-            this.pnlPelicula.Controls.Add(form);
-            this.pnlPelicula.Tag = form;
-            form.Show();
-        }
-
         private void btnListaClientes_Click(object sender, EventArgs e)
         {
-            AbrirForm(new ListadoPeliculas());
+            AdminForm form = new AdminForm();
+            form.AbrirForm(pnlPelicula, new ListadoPeliculas());
         }
 
         private void btnNuevoCliente_Click(object sender, EventArgs e)
         {
-            AbrirForm(new CrearPelicula());
+            AdminForm form = new AdminForm();
+            form.AbrirForm(pnlPelicula, new CrearPelicula());
         }
 
         private void lblClientes_Click(object sender, EventArgs e)

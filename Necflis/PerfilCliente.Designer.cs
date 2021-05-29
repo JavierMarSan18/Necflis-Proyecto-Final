@@ -158,9 +158,9 @@ namespace Necflis
             // pnlContenedor
             // 
             this.pnlContenedor.Image = ((System.Drawing.Image)(resources.GetObject("pnlContenedor.Image")));
-            this.pnlContenedor.Location = new System.Drawing.Point(223, 1);
+            this.pnlContenedor.Location = new System.Drawing.Point(224, 1);
             this.pnlContenedor.Name = "pnlContenedor";
-            this.pnlContenedor.Size = new System.Drawing.Size(782, 481);
+            this.pnlContenedor.Size = new System.Drawing.Size(776, 481);
             this.pnlContenedor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pnlContenedor.TabIndex = 10;
             this.pnlContenedor.TabStop = false;
@@ -171,9 +171,9 @@ namespace Necflis
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.btnPlaylist);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(1, 3);
+            this.panel1.Location = new System.Drawing.Point(1, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(222, 479);
+            this.panel1.Size = new System.Drawing.Size(222, 481);
             this.panel1.TabIndex = 12;
             // 
             // panel2
@@ -194,12 +194,13 @@ namespace Necflis
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(7)))), ((int)(((byte)(32)))));
-            this.ClientSize = new System.Drawing.Size(1000, 478);
+            this.ClientSize = new System.Drawing.Size(1000, 482);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlContenedor);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "PerfilCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "PerfilCliente";
+            this.Text = "Perfil";
             this.Load += new System.EventHandler(this.PerfilCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

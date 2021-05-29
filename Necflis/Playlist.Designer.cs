@@ -108,7 +108,7 @@ namespace Necflis
             // ptbPeliculas
             // 
             this.ptbPeliculas.Image = ((System.Drawing.Image)(resources.GetObject("ptbPeliculas.Image")));
-            this.ptbPeliculas.Location = new System.Drawing.Point(393, 1);
+            this.ptbPeliculas.Location = new System.Drawing.Point(388, -2);
             this.ptbPeliculas.Name = "ptbPeliculas";
             this.ptbPeliculas.Size = new System.Drawing.Size(390, 481);
             this.ptbPeliculas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -125,6 +125,7 @@ namespace Necflis
             this.label1.Size = new System.Drawing.Size(267, 39);
             this.label1.TabIndex = 34;
             this.label1.Text = "Lista de peliculas";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // tblPelicula
             // 

@@ -19,28 +19,11 @@ namespace Necflis
             LeerData();
         }
 
-        String conString = "datasource=localhost;port=3306;username=root;";
         private void LeerData()
         {
             string consulta = "select * from necflis.cliente;";
-            MySqlConnection con = new MySqlConnection(conString);
-            MySqlCommand command = new MySqlCommand(consulta, con);
-
-            try
-            {
-                con.Open();
-                MySqlDataAdapter adapter = new MySqlDataAdapter();
-                adapter.SelectCommand = command;
-                DataTable dt = new DataTable();
-                adapter.Fill(dt);
-                tblSelecCliente.DataSource = dt;
-                con.Close();
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error al leer data \n{ex}");
-            }
+            DBConexion leer = new DBConexion();
+            leer.Select(consulta, tblSelecCliente);
         }
 
         private void tblSelecCliente_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -53,8 +36,6 @@ namespace Necflis
 
             PerfilCliente perfil = new PerfilCliente(id, nombre, direccion, edad);
             perfil.Show();
-
-    
         }
 
         private void SeleccionarCliente_Load(object sender, EventArgs e)

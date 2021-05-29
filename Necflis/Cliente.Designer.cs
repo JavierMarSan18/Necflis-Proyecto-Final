@@ -32,7 +32,7 @@ namespace Necflis
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCliente));
             this.pnlOpCliente = new System.Windows.Forms.Panel();
             this.lblClientes = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSelecCliente = new System.Windows.Forms.Button();
             this.btnNuevoCliente = new System.Windows.Forms.Button();
             this.btnListaClientes = new System.Windows.Forms.Button();
             this.pnlCliente = new System.Windows.Forms.PictureBox();
@@ -43,7 +43,7 @@ namespace Necflis
             // pnlOpCliente
             // 
             this.pnlOpCliente.Controls.Add(this.lblClientes);
-            this.pnlOpCliente.Controls.Add(this.button1);
+            this.pnlOpCliente.Controls.Add(this.btnSelecCliente);
             this.pnlOpCliente.Controls.Add(this.btnNuevoCliente);
             this.pnlOpCliente.Controls.Add(this.btnListaClientes);
             this.pnlOpCliente.Location = new System.Drawing.Point(2, 1);
@@ -63,25 +63,25 @@ namespace Necflis
             this.lblClientes.TabIndex = 9;
             this.lblClientes.Text = "Clientes";
             // 
-            // button1
+            // btnSelecCliente
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(7)))), ((int)(((byte)(52)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(48)))), ((int)(((byte)(65)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(48)))), ((int)(((byte)(65)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Bahnschrift Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 247);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(222, 35);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Seleccionar cliente ";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnSelecCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(7)))), ((int)(((byte)(52)))));
+            this.btnSelecCliente.FlatAppearance.BorderSize = 0;
+            this.btnSelecCliente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(48)))), ((int)(((byte)(65)))));
+            this.btnSelecCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(48)))), ((int)(((byte)(65)))));
+            this.btnSelecCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelecCliente.Font = new System.Drawing.Font("Bahnschrift Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelecCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnSelecCliente.Image = ((System.Drawing.Image)(resources.GetObject("btnSelecCliente.Image")));
+            this.btnSelecCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSelecCliente.Location = new System.Drawing.Point(0, 247);
+            this.btnSelecCliente.Name = "btnSelecCliente";
+            this.btnSelecCliente.Size = new System.Drawing.Size(222, 35);
+            this.btnSelecCliente.TabIndex = 8;
+            this.btnSelecCliente.Text = "Seleccionar cliente ";
+            this.btnSelecCliente.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSelecCliente.UseVisualStyleBackColor = false;
+            this.btnSelecCliente.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnNuevoCliente
             // 
@@ -154,7 +154,7 @@ namespace Necflis
         #endregion
 
         private System.Windows.Forms.Panel pnlOpCliente;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSelecCliente;
         private System.Windows.Forms.Button btnNuevoCliente;
         private System.Windows.Forms.Label lblClientes;
         private System.Windows.Forms.Button btnListaClientes;

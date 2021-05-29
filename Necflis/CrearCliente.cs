@@ -24,7 +24,6 @@ namespace Necflis
             txtDireccionCliente.Text = String.Empty;
         }
 
-        String conString = "datasource=localhost;port=3306;username=root;";
         private void guardarCliente()
         {
             string nombre = txtNombreCliente.Text;

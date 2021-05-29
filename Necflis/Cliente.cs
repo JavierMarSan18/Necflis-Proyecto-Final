@@ -21,33 +21,22 @@ namespace Necflis
 
         }
 
-        private void AbrirForm(object Nform)
-        {
-            if (this.pnlCliente.Controls.Count > 0)
-                this.pnlCliente.Controls.RemoveAt(0);
-
-            Form form = Nform as Form;
-
-            form.TopLevel = false;
-            form.Dock = DockStyle.Fill;
-            this.pnlCliente.Controls.Add(form);
-            this.pnlCliente.Tag = form;
-            form.Show();
-        }
-
         private void btnListaClientes_Click(object sender, EventArgs e)
         {
-            AbrirForm(new ListadoClientes());
+            AdminForm form = new AdminForm();
+            form.AbrirForm(pnlCliente, new ListadoClientes());
         }
 
         private void btnNuevoCliente_Click(object sender, EventArgs e)
         {
-            AbrirForm(new CrearCliente());
+            AdminForm form = new AdminForm();
+            form.AbrirForm(pnlCliente, new CrearCliente());
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AbrirForm(new SeleccionarCliente());
+            AdminForm form = new AdminForm();
+            form.AbrirForm(pnlCliente, new SeleccionarCliente());
         }
 
         private void pnlOpCliente_Paint(object sender, PaintEventArgs e)

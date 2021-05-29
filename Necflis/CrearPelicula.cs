@@ -13,8 +13,6 @@ namespace Necflis
 {
     public partial class CrearPelicula : Form
     {
-        String conString = "datasource=localhost;port=3306;username=root;";
-
         public CrearPelicula()
         {
             InitializeComponent();
@@ -43,11 +41,6 @@ namespace Necflis
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)

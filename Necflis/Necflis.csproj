@@ -95,6 +95,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminForm.cs" />
     <Compile Include="Cliente.cs">
       <SubType>Form</SubType>
     </Compile>

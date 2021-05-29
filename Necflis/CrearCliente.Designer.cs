@@ -197,8 +197,7 @@ namespace Necflis
             "57",
             "58",
             "59",
-            "60",
-            " "});
+            "60"});
             this.txtEdadCliente.Location = new System.Drawing.Point(85, 303);
             this.txtEdadCliente.Name = "txtEdadCliente";
             this.txtEdadCliente.Size = new System.Drawing.Size(272, 30);

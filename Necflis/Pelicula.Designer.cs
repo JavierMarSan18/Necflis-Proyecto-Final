@@ -32,8 +32,8 @@ namespace Necflis
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPelicula));
             this.pnlOpCliente = new System.Windows.Forms.Panel();
             this.lblClientes = new System.Windows.Forms.Label();
-            this.btnNuevoCliente = new System.Windows.Forms.Button();
-            this.btnListaClientes = new System.Windows.Forms.Button();
+            this.btnNuevaPelicula = new System.Windows.Forms.Button();
+            this.btnListaPeliculas = new System.Windows.Forms.Button();
             this.pnlPelicula = new System.Windows.Forms.PictureBox();
             this.pnlOpCliente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pnlPelicula)).BeginInit();
@@ -42,8 +42,8 @@ namespace Necflis
             // pnlOpCliente
             // 
             this.pnlOpCliente.Controls.Add(this.lblClientes);
-            this.pnlOpCliente.Controls.Add(this.btnNuevoCliente);
-            this.pnlOpCliente.Controls.Add(this.btnListaClientes);
+            this.pnlOpCliente.Controls.Add(this.btnNuevaPelicula);
+            this.pnlOpCliente.Controls.Add(this.btnListaPeliculas);
             this.pnlOpCliente.Location = new System.Drawing.Point(2, 1);
             this.pnlOpCliente.Name = "pnlOpCliente";
             this.pnlOpCliente.Size = new System.Drawing.Size(221, 481);
@@ -61,45 +61,45 @@ namespace Necflis
             this.lblClientes.Text = "Películas";
             this.lblClientes.Click += new System.EventHandler(this.lblClientes_Click);
             // 
-            // btnNuevoCliente
+            // btnNuevaPelicula
             // 
-            this.btnNuevoCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(7)))), ((int)(((byte)(52)))));
-            this.btnNuevoCliente.FlatAppearance.BorderSize = 0;
-            this.btnNuevoCliente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(48)))), ((int)(((byte)(65)))));
-            this.btnNuevoCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(48)))), ((int)(((byte)(65)))));
-            this.btnNuevoCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNuevoCliente.Font = new System.Drawing.Font("Bahnschrift Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevoCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnNuevoCliente.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevoCliente.Image")));
-            this.btnNuevoCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNuevoCliente.Location = new System.Drawing.Point(3, 180);
-            this.btnNuevoCliente.Name = "btnNuevoCliente";
-            this.btnNuevoCliente.Size = new System.Drawing.Size(218, 35);
-            this.btnNuevoCliente.TabIndex = 7;
-            this.btnNuevoCliente.Text = "Crear nueva película";
-            this.btnNuevoCliente.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnNuevoCliente.UseVisualStyleBackColor = false;
-            this.btnNuevoCliente.Click += new System.EventHandler(this.btnNuevoCliente_Click);
+            this.btnNuevaPelicula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(7)))), ((int)(((byte)(52)))));
+            this.btnNuevaPelicula.FlatAppearance.BorderSize = 0;
+            this.btnNuevaPelicula.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(48)))), ((int)(((byte)(65)))));
+            this.btnNuevaPelicula.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(48)))), ((int)(((byte)(65)))));
+            this.btnNuevaPelicula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevaPelicula.Font = new System.Drawing.Font("Bahnschrift Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevaPelicula.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnNuevaPelicula.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevaPelicula.Image")));
+            this.btnNuevaPelicula.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNuevaPelicula.Location = new System.Drawing.Point(3, 180);
+            this.btnNuevaPelicula.Name = "btnNuevaPelicula";
+            this.btnNuevaPelicula.Size = new System.Drawing.Size(218, 35);
+            this.btnNuevaPelicula.TabIndex = 7;
+            this.btnNuevaPelicula.Text = "Crear nueva película";
+            this.btnNuevaPelicula.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnNuevaPelicula.UseVisualStyleBackColor = false;
+            this.btnNuevaPelicula.Click += new System.EventHandler(this.btnNuevoCliente_Click);
             // 
-            // btnListaClientes
+            // btnListaPeliculas
             // 
-            this.btnListaClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(7)))), ((int)(((byte)(52)))));
-            this.btnListaClientes.FlatAppearance.BorderSize = 0;
-            this.btnListaClientes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(48)))), ((int)(((byte)(65)))));
-            this.btnListaClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(48)))), ((int)(((byte)(65)))));
-            this.btnListaClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnListaClientes.Font = new System.Drawing.Font("Bahnschrift Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListaClientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnListaClientes.Image = ((System.Drawing.Image)(resources.GetObject("btnListaClientes.Image")));
-            this.btnListaClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnListaClientes.Location = new System.Drawing.Point(3, 110);
-            this.btnListaClientes.Name = "btnListaClientes";
-            this.btnListaClientes.Size = new System.Drawing.Size(218, 35);
-            this.btnListaClientes.TabIndex = 6;
-            this.btnListaClientes.Text = " Ver lista de películas";
-            this.btnListaClientes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnListaClientes.UseVisualStyleBackColor = false;
-            this.btnListaClientes.Click += new System.EventHandler(this.btnListaClientes_Click);
+            this.btnListaPeliculas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(7)))), ((int)(((byte)(52)))));
+            this.btnListaPeliculas.FlatAppearance.BorderSize = 0;
+            this.btnListaPeliculas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(48)))), ((int)(((byte)(65)))));
+            this.btnListaPeliculas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(48)))), ((int)(((byte)(65)))));
+            this.btnListaPeliculas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnListaPeliculas.Font = new System.Drawing.Font("Bahnschrift Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListaPeliculas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnListaPeliculas.Image = ((System.Drawing.Image)(resources.GetObject("btnListaPeliculas.Image")));
+            this.btnListaPeliculas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnListaPeliculas.Location = new System.Drawing.Point(3, 110);
+            this.btnListaPeliculas.Name = "btnListaPeliculas";
+            this.btnListaPeliculas.Size = new System.Drawing.Size(218, 35);
+            this.btnListaPeliculas.TabIndex = 6;
+            this.btnListaPeliculas.Text = " Ver lista de películas";
+            this.btnListaPeliculas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnListaPeliculas.UseVisualStyleBackColor = false;
+            this.btnListaPeliculas.Click += new System.EventHandler(this.btnListaClientes_Click);
             // 
             // pnlPelicula
             // 
@@ -134,8 +134,8 @@ namespace Necflis
 
         private System.Windows.Forms.Panel pnlOpCliente;
         private System.Windows.Forms.Label lblClientes;
-        private System.Windows.Forms.Button btnNuevoCliente;
-        private System.Windows.Forms.Button btnListaClientes;
+        private System.Windows.Forms.Button btnNuevaPelicula;
+        private System.Windows.Forms.Button btnListaPeliculas;
         private System.Windows.Forms.PictureBox pnlPelicula;
     }
 }

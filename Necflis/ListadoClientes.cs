@@ -13,35 +13,14 @@ namespace Necflis
 {
     public partial class ListadoClientes : Form
     {
+        string consulta = "select * from necflis.cliente;";
+        DBConexion leer = new DBConexion();
         public ListadoClientes()
         {
             InitializeComponent();
-            LeerData();
+            leer.Select(consulta, tblCliente);
         }
 
-        String conString = "datasource=localhost;port=3306;username=root;";
-        private void LeerData()
-        {
-            string consulta = "select * from necflis.cliente;";
-            MySqlConnection con = new MySqlConnection(conString);
-            MySqlCommand command = new MySqlCommand(consulta, con);
-
-            try
-            {
-                con.Open();
-                MySqlDataAdapter adapter = new MySqlDataAdapter();
-                adapter.SelectCommand = command;
-                DataTable dt = new DataTable();
-                adapter.Fill(dt);
-                tblCliente.DataSource = dt;
-                con.Close();
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error al leer data \n{ex}");
-            }
-        }
         private void ListadoClientes_Load(object sender, EventArgs e)
         {
 
