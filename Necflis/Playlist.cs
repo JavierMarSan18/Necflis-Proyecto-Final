@@ -13,7 +13,7 @@ namespace Necflis
 {
     public partial class Playlist : Form
     {
-        private int id_usuario;
+        cCliente cliente;
         DBConexion conexion = new DBConexion();
 
         public Playlist()
@@ -24,19 +24,19 @@ namespace Necflis
         public Playlist(int id)
         {
             InitializeComponent();
-            this.id_usuario = id;
+            cliente = new cCliente(id);
             LeerDataPlayList();
         }
         private void LeerDataPlayList()
         {
-            string consulta = $"select * from necflis.playlist where Id_usuario = {this.id_usuario};";
+            string consulta = $"select * from necflis.playlist where Id_usuario = {cliente.id};";
             conexion.Select(consulta, tblSelecCliente);
         }
 
         private void AgregarAPlaylist(string nombre, string genero)
         {
             string insert = "insert into necflis.playlist(Nombre_pelicula, Genero, Id_usuario)" +
-                "VALUES ('" + nombre + "', '" + genero + "', "+this.id_usuario+")";
+                "VALUES ('" + nombre + "', '" + genero + "', "+ cliente.id +")";
 
             conexion.Insert(insert);
         }
@@ -53,7 +53,6 @@ namespace Necflis
 
             string consulta = $"select * from necflis.pelicula;";
             conexion.Select(consulta, tblPelicula);
-
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -69,10 +68,9 @@ namespace Necflis
         private void tblPelicula_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             DataGridViewRow row = tblPelicula.SelectedRows[0];
-            string nombrePelicula = row.Cells[1].Value.ToString();
-            string generoPelicula = row.Cells[3].Value.ToString();
+            cPelicula pelicula = new cPelicula(row.Cells[1].Value.ToString(), row.Cells[3].Value.ToString());
 
-            AgregarAPlaylist(nombrePelicula, generoPelicula);
+            AgregarAPlaylist(pelicula.nombre, pelicula.genero);
             LeerDataPlayList();
         }
 

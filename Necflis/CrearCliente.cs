@@ -26,12 +26,10 @@ namespace Necflis
 
         private void guardarCliente()
         {
-            string nombre = txtNombreCliente.Text;
-            string direccion = txtDireccionCliente.Text;
-            int edad = int.Parse(txtEdadCliente.Text);
+            cCliente cliente = new cCliente(txtNombreCliente.Text, txtDireccionCliente.Text, int.Parse(txtEdadCliente.Text));
 
             string insert = "insert into necflis.cliente(Nombre, Direccion, Edad)" + 
-                "VALUES ('"+ nombre + "','" + direccion + "', " + edad + ")";
+                "VALUES ('"+ cliente.nombre + "','" + cliente.direccion + "', " + cliente.edad + ")";
 
             DBConexion agregar = new DBConexion();
             agregar.Insert(insert);

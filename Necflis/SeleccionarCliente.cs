@@ -29,12 +29,9 @@ namespace Necflis
         private void tblSelecCliente_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             DataGridViewRow row = tblSelecCliente.SelectedRows[0];
-            int id = int.Parse(row.Cells[0].Value.ToString());
-            string nombre = row.Cells[1].Value.ToString();
-            string direccion = row.Cells[2].Value.ToString();
-            string edad = row.Cells[3].Value.ToString();
+            cCliente cliente = new cCliente(int.Parse(row.Cells[0].Value.ToString()), row.Cells[1].Value.ToString(), row.Cells[2].Value.ToString(), int.Parse(row.Cells[3].Value.ToString()));
 
-            PerfilCliente perfil = new PerfilCliente(id, nombre, direccion, edad);
+            PerfilCliente perfil = new PerfilCliente(cliente.id, cliente.nombre, cliente.direccion, cliente.edad.ToString());
             perfil.Show();
         }
 

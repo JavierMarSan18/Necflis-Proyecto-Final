@@ -43,5 +43,10 @@ namespace Necflis
         {
 
         }
+
+        private void pnlCliente_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -23,7 +23,6 @@ namespace Necflis
                 con.Close();
 
                 MessageBox.Show("Guardado exitosamente");
-
             }
             catch (Exception ex)
             {

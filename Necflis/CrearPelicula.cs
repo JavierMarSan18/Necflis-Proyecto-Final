@@ -26,13 +26,10 @@ namespace Necflis
 
         private void guardarPelicula()
         {
-            string nombre = txtNombrePelicula.Text;
-            string tipo = txtTipoPelicula.Text;
-            string genero = txtGeneroPelicula.Text;
-            string sinopsis = txtSinopsisPelicula.Text;
+            cPelicula pelicula = new cPelicula(txtNombrePelicula.Text, txtTipoPelicula.Text, txtGeneroPelicula.Text, txtSinopsisPelicula.Text);
 
             string insert = "insert into necflis.pelicula(Nombre, Tipo, Genero, Sinopsis)" +
-                "VALUES ('" + nombre + "','" + tipo + "', '" + genero + "','" + sinopsis + "')";
+                "VALUES ('" + pelicula.nombre + "','" + pelicula.tipo + "', '" + pelicula.genero + "','" + pelicula.sinopsis + "')";
 
             DBConexion agregar = new DBConexion();
             agregar.Insert(insert);

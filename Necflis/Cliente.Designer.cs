@@ -132,6 +132,7 @@ namespace Necflis
             this.pnlCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pnlCliente.TabIndex = 1;
             this.pnlCliente.TabStop = false;
+            this.pnlCliente.Click += new System.EventHandler(this.pnlCliente_Click);
             // 
             // formCliente
             // 
